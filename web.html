@@ -1,0 +1,488 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aradhya Marriage Hall</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #fffafc;
+      color: #333;
+      overflow-x: hidden;
+    }
+   header {
+  background-image: url('C:\Users\at137\OneDrive\Desktop\website\night view.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+    
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px #000;
+      transition: 0.3s;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      background: rgba(0,0,0,0.4);
+      padding: 8px 15px;
+      border-radius: 10px;
+    }
+    .shayari, section {
+      padding: 50px 20px;
+      text-align: center;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    .shayari {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #a1005c;
+      background: linear-gradient(90deg, #ffebf7, #ffe6fa);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+    }
+    .swiper {
+      width: 100%;
+      padding: 30px 0;
+    }
+    .swiper-slide img {
+      width: 90%;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+    iframe {
+      width: 90%;
+      max-width: 560px;
+      height: 315px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 10px;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 15px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      margin-top: 40px;
+      transition: background-color 0.3s;
+    }
+	header h1 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 8px #ff1493;
+  transition: all 0.3s ease-in-out;
+}
+
+header h1:hover {
+  color: #ffd700; /* Golden highlight */
+  text-shadow: 0 0 15px #ff69b4, 0 0 30px #ff69b4;
+  transform: scale(1.05);
+}
+    .whatsapp-btn:hover {
+      background-color: #128C7E;
+    }
+    .whatsapp-chatbox {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: bounceIn 1.5s;
+    }
+	.tagline {
+  color: #fff;
+  font-size: 1.2rem;
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 5s steps(50, end) forwards, blink 0.8s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+    .whatsapp-chatbox::after {
+      content: '👋 Hello! Aradhya Marriage Hall mein aapka swagat hai. Aap booking ke liye WhatsApp karein!';
+      font-size: 0.95rem;
+    }
+    .music-control {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: #ff0077;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+	.shayari-section {
+  background: linear-gradient(to right, #ffefba, #ffc3a0);
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.video-section {
+  background: linear-gradient(to right, #ffe0e0, #ffc0cb);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.video-container {
+  border: 8px solid #fff;
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.6);
+  border-radius: 20px;
+  display: inline-block;
+  animation: pulseGlow 3s infinite;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  width: 300px;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 20px #ff69b4; }
+  50% { box-shadow: 0 0 40px #ff1493; }
+  100% { box-shadow: 0 0 20px #ff69b4; }
+}
+.shayari-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #8b0000;
+  text-shadow: 1px 1px 5px #fff;
+}
+.map-wrapper {
+  background: linear-gradient(to right, #fff0f5, #ffe4e1);
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 3px solid #ff69b4;
+  border-bottom: 3px solid #ff69b4;
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.3);
+}
+
+.map-container {
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.shayari-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  font-size: 1.3rem;
+  color: #333;
+  transition: transform 0.3s ease-in-out;
+}
+.scroll-text {
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: scroll-left 15s linear infinite;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 10px 0;
+  background: linear-gradient(to right, #ff0080, #7928ca);
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.between-section {
+  background: linear-gradient(to right, #ffdee9, #b5fffc);
+  padding: 40px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  color: #800000;
+  border-top: 4px dashed #ff69b4;
+  border-bottom: 4px dashed #ff69b4;
+}
+.thank-you-banner {
+  background: linear-gradient(45deg, #ffb6c1, #ffe4e1);
+  color: #8b0000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px pink;
+  animation: slideBanner 6s ease-in-out infinite alternate;
+}
+
+@keyframes slideBanner {
+  0% { letter-spacing: 1px; }
+  100% { letter-spacing: 4px; }
+}
+.shayari-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(255,105,180,0.5);
+}
+.whatsapp-float {
+  background: #25D366;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 50px;
+  box-shadow: 0 0 20px #25D366;
+  font-weight: bold;
+  font-size: 1.2rem;
+  animation: bounceBtn 2s infinite;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* CSS */
+#preloader {
+  background: #fff;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #ff0080;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+<script>
+  window.addEventListener("load", function () {
+    document.getElementById("preloader").style.display = "none";
+  });
+</script>
+@keyframes bounceBtn {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+    footer {
+      background: #6d0c51;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      0% { transform: translateY(40px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes bounceIn {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+	<style>
+  .elegant-section {
+    background: linear-gradient(to bottom right, #fff0f5, #fdeff9); /* soft pink */
+    color: #4b004b; /* deep maroon text */
+    padding: 40px 20px;
+    border-top: 3px dashed #ff69b4;
+    border-bottom: 3px dashed #ff69b4;
+    box-shadow: 0 0 20px rgba(255, 192, 203, 0.4);
+  }
+
+  .elegant-section h2, 
+  .elegant-section h3 {
+    color: #c2185b; /* bold rose color */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px white;
+  }
+
+  .elegant-section p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+</style>
+  </style>
+</head>
+<body>
+  <div class="music-control" onclick="toggleMusic()">🔊 Play Music</div>
+  <audio id="bgMusic" autoplay loop>
+    <source src="voice.mp3" type="audio/mpeg">
+  </audio> 
+  <header class="my1">
+    <h1>Aradhya Marriage Hall</h1>
+    <p class="tagline">Talk of the Town — जहाँ हर शादी बने एक कहानी ✨</p>
+	<img src="C:\Users\at137\OneDrive\Desktop\website\full .jpg" height="80%" width="100%">
+  </header> 
+  
+  <section>
+    <div class="shayari">
+      💐 जहाँ रौशनी में सजती हैं खुशियाँ,<br />
+      वहीं होती है शादी की सबसे हसीन कहानी — <strong>आराध्या रिसोर्ट</strong> में! 💫
+    </div>
+	
+	
+	<div style="text-align:center; margin-top:20px;">
+  <h3>🎵 शादी का माहौल बनाएँ – म्यूज़िक के साथ!</h3>
+  
+  <audio autoplay loop>
+  <source src="voice.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- HTML -->
+<div id="preloader">
+  <div class="loader"></div>
+</div>
+  <h1 onclick="playAudio()">🎊 Welcome to Aradhya Marriage Hall 🎊</h1>
+
+  <!-- Audio element -->
+  <audio id="bgAudio">
+    <source src="voice.mp3" type="audio/mpeg">
+    आपका ब्राउज़र इस ऑडियो को सपोर्ट नहीं करता।
+  </audio>
+
+
+<div class="">
+    <iframe src="C:\Users\at137\OneDrive\Desktop\web\voice.mp4" allowfullscreen></iframe>
+  </div>
+  </section>  
+  <div class="scroll-text">
+  🎊 आपका स्वागत है Aradhya Marriage Hall में — जहाँ हर शादी बनती है यादगार कहानी! 🎉
+</div>
+  <section>
+    <h2>Gallery</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="C:\Users\at137\OneDrive\Desktop\website\stage.jpg" alt="Stage"/></div>
+        <div class="swiper-slide"><img src="C:\Users\at137\OneDrive\Desktop\website\seting place.jpg" alt="View"/></div>
+        <div class="swiper-slide"><img src="C:\Users\at137\OneDrive\Desktop\website\tree.jpg" alt="Garden"/></div>
+		 <div class="swiper-slide"><img src="C:\Users\at137\OneDrive\Desktop\website\talking.jpg" alt="Garden"/></div>
+		  <div class="swiper-slide"><img src="C:\Users\at137\OneDrive\Desktop\website\way.jpg" alt="Garden"/></div>
+      </div>
+    </div>
+	<section class="shayari-section">
+  <h2>💌 शादी की कुछ खास बातें 💌</h2>
+  <div class="shayari-card">
+    <p>✨ बैंड बाजा बारात के संग,  
+    हर दिल ने यहां रचाई उमंग! 💃</p>
+  </div>
+
+  <div class="shayari-card">
+    <p>🎊 सज गए हैं सपनों के महल,  
+    आई है खुशियाँ हर पल-पल! 💫</p>
+  </div>
+
+  <div class="shayari-card">
+    <p>💍 रिश्तों में घुली मिठास है यहाँ,  
+    शादी की हर रस्म में खास बात है यहाँ! 🎉</p>
+  </div>
+</section>
+  </section>
+  <section class="video-section">
+  <h2>🎥 Our Wedding Vibe 🎉</h2>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/QwBO4jt81yQ" allowfullscreen></iframe>
+  </div>
+</section>
+
+  <section class="map-wrapper">
+    <h2> location-Find Us Here</h2>
+    <div class="map-container"><iframe src="https://www.google.com/maps?q=WR9G+X3F,+Lilapur,+Uttar+Pradesh+230144&output=embed"></iframe>
+  </div></section> 
+  
+<div class="between-section">
+  <p>💫 जहां प्यार, सजावट और रौनक एक जगह हो – वही है Aradhya Marriage Hall! 💐</p>
+</div>
+
+ <a href="https://wa.me/918601166660" class="whatsapp-float" target="_blank">
+  📱 Book on WhatsApp Now!
+</a>
+<section class="elegant-section" id="booking">
+  <h2>📞 Book on WhatsApp Now!</h2>
+  <p>सीटें सीमित हैं! आज ही बुक करें और शादी को यादगार बनाएं!</p>
+  <a href="https://wa.me/918601166660" target="_blank">
+    <button style="padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px;">
+      WhatsApp पर बुक करें!
+    </button>
+  </a>
+</section>
+  <footer>
+    <p>&copy; 2025 Aradhya Marriage Hall | Designed with ❤ by team pro army</p>
+    <p>Location: WR9G+X3F, Lilapur, Uttar Pradesh 230144</p>
+  </footer>  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: { delay: 3000 },
+      effect: 'slide'
+    });
+
+    function toggleMusic() {
+      const audio = document.getElementById("bgMusic");
+      const btn = document.querySelector(".music-control");
+      if (audio.paused) {
+        audio.play();
+        btn.textContent = "🔇 Pause Music";
+      } else {
+        audio.pause();
+        btn.textContent = "🔊 Play Music";
+      }
+    }
+  </script>
+  <div class="thank-you-banner">
+  🎊 Thank You for Visiting Aradhya Marriage Hall – आपका स्वागत है! 🎊
+</div>
+  </body>
+</html>
